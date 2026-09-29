@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Un pequeño regalo digital para celebrar el 30 de septiembre."
+    >
+
+    <title>30.09 | Un regalo especial</title>
+
+    <!-- Fuentes. Si no cargan, la página utiliza fuentes del sistema -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         FONDO DE PARTÍCULAS
+    ====================================================== -->
+
+    <div id="particulas" class="particulas"></div>
+
+
+    <!-- =====================================================
+         INDICADOR DE PROGRESO
+    ====================================================== -->
+
+    <div class="progreso">
+        <span class="progreso-punto activo" data-paso="0"></span>
+        <span class="progreso-linea"></span>
+        <span class="progreso-punto" data-paso="1"></span>
+        <span class="progreso-linea"></span>
+        <span class="progreso-punto" data-paso="2"></span>
+        <span class="progreso-linea"></span>
+        <span class="progreso-punto" data-paso="3"></span>
+    </div>
+
+
+    <!-- =====================================================
+         ETAPA 1 — PORTADA
+    ====================================================== -->
+
+    <main>
+
+        <section id="inicio" class="pantalla pantalla-inicio">
+
+            <div class="luces-fondo luz-uno"></div>
+            <div class="luces-fondo luz-dos"></div>
+
+            <div class="decoracion-codigo codigo-uno">30.09</div>
+            <div class="decoracion-codigo codigo-dos">START // 001</div>
+
+            <div class="contenido-inicio">
+
+                <div class="etiqueta-fecha">
+                    <span class="punto-etiqueta"></span>
+                    30 DE SEPTIEMBRE
+                </div>
+
+
+                <!-- AUTO PRINCIPAL -->
+
+                <div class="auto-portada" id="autoPortada">
+
+                    <div class="halo-auto"></div>
+
+                    <svg
+                        class="auto-svg"
+                        viewBox="0 0 700 350"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-label="Automóvil deportivo de juguete azul"
+                        role="img"
+                    >
+
+                        <!-- Sombra -->
+                        <ellipse
+                            cx="350"
+                            cy="294"
+                            rx="250"
+                            ry="27"
+                            fill="#020812"
+                            opacity="0.85"
+                        />
+
+                        <!-- Línea de luz del suelo -->
+                        <ellipse
+                            cx="350"
+                            cy="288"
+                            rx="225"
+                            ry="7"
+                            fill="#179cff"
+                            opacity="0.28"
+                        />
+
+                        <!-- Carrocería principal -->
+                        <path
+                            class="carroceria"
+                            d="
+                            M110 248
+                            C120 215 145 195 190 185
+                            L247 176
+                            L290 119
+                            C305 99 327 89 355 89
+                            L441 89
+                            C466 89 489 102 503 123
+                            L542 178
+                            L579 188
+                            C606 195 625 214 632 245
+                            L620 260
+                            L80 260
+                            Z
+                            "
+                        />
+
+                        <!-- Parte superior brillante -->
+                        <path
+                            d="
+                            M249 174
+                            L292 119
+                            C306 101 328 93 355 93
+                            L439 93
+                            C461 93 480 104 494 123
+                            L531 176
+                            Z
+                            "
+                            fill="#1c9eff"
+                            opacity="0.5"
+                        />
+
+                        <!-- Vidrio delantero -->
+                        <path
+                            d="
+                            M311 166
+                            L336 111
+                            L371 105
+                            L371 166
+                            Z
+                            "
+                            fill="#061526"
+                            stroke="#67d5ff"
+                            stroke-width="2"
+                        />
+
+                        <!-- Vidrio trasero -->
+                        <path
+                            d="
+                            M380 105
+                            L438 105
+                            C455 105 469 114 481 132
+                            L505 166
+                            L380 166
+                            Z
+                            "
+                            fill="#061526"
+                            stroke="#67d5ff"
+                            stroke-width="2"
+                        />
+
+                        <!-- Reflejo de vidrio -->
+                        <path
+                            d="M322 151 L341 116 L354 113 L340 151 Z"
+                            fill="#ffffff"
+                            opacity="0.2"
+                        />
+
+                        <!-- Línea lateral -->
+                        <path
+                            d="M133 218 C250 207 425 208 590 218"
+                            fill="none"
+                            stroke="#6dd7ff"
+                            stroke-width="3"
+                            opacity="0.6"
+                        />
+
+                        <!-- Detalle lateral -->
+                        <path
+                            d="M180 238 C275 226 460 226 554 239"
+                            fill="none"
+                            stroke="#0b5e9e"
+                            stroke-width="9"
+                        />
+
+                        <!-- Faro izquierdo -->
+                        <path
+                            d="M126 224 Q145 205 174 204 L190 207 L174 226 L137 233 Z"
+                            fill="#dff8ff"
+                        />
+
+                        <path
+                            d="M132 223 L174 210"
+                            stroke="#ffffff"
+                            stroke-width="5"
+                            opacity="0.8"
+                        />
+
+                        <!-- Faro derecho -->
+                        <path
+                            d="M574 207 Q598 210 614 228 L616 237 L579 228 L566 208 Z"
+                            fill="#c9f5ff"
+                        />
+
+                        <!-- Parrilla -->
+                        <path
+                            d="M295 250 L405 250 L391 260 L309 260 Z"
+                            fill="#02070d"
+                        />
+
+                        <!-- Entrada de aire -->
+                        <path
+                            d="M211 240 Q238 229 269 235 L260 249 L217 249 Z"
+                            fill="#02070d"
+                        />
+
+                        <path
+                            d="M431 235 Q462 229 492 240 L485 249 L441 249 Z"
+                            fill="#02070d"
+                        />
+
+                        <!-- Rueda izquierda -->
+                        <g class="rueda rueda-izquierda">
+                            <circle
+                                cx="196"
+                                cy="259"
+                                r="47"
+                                fill="#020305"
+                            />
+
+                            <circle
+                                cx="196"
+                                cy="259"
+                                r="29"
+                                fill="#252c34"
+                            />
+
+                            <circle
+                                cx="196"
+                                cy="259"
+                                r="15"
+                                fill="#9faab5"
+                            />
+
+                            <circle
+                                cx="196"
+                                cy="259"
+                                r="7"
+                                fill="#111820"
+                            />
+
+                            <path
+                                d="M196 237 L196 281 M174 259 L218 259"
+                                stroke="#dce6ed"
+                                stroke-width="3"
+                            />
+                        </g>
+
+                        <!-- Rueda derecha -->
+                        <g class="rueda rueda-derecha">
+                            <circle
+                                cx="510"
+                                cy="259"
+                                r="47"
+                                fill="#020305"
+                            />
+
+                            <circle
+                                cx="510"
+                                cy="259"
+                                r="29"
+                                fill="#252c34"
+                            />
+
+                            <circle
+                                cx="510"
+                                cy="259"
+                                r="15"
+                                fill="#9faab5"
+                            />
+
+                            <circle
+                                cx="510"
+                                cy="259"
+                                r="7"
+                                fill="#111820"
+                            />
+
+                            <path
+                                d="M510 237 L510 281 M488 259 L532 259"
+                                stroke="#dce6ed"
+                                stroke-width="3"
+                            />
+                        </g>
+
+                        <!-- Pequeño detalle de colección -->
+                        <text
+                            x="337"
+                            y="222"
+                            fill="#d8f6ff"
+                            font-size="12"
+                            font-family="Arial"
+                            letter-spacing="3"
+                        >
+                            30.09
+                        </text>
+
+                    </svg>
+
+                </div>
+
+
+                <div class="texto-portada">
+
+                    <p class="numero-grande">30.09</p>
+
+                    <h1>
+                        Hoy no se regalan
+                        <span>flores solamente...</span>
+                    </h1>
+
+                    <p class="subtitulo-portada">
+                        ...se regalan palabras bonitas para un amigo.
+                        <span>🏎️💙</span>
+                    </p>
+
+                </div>
+
+
+                <button
+                    id="btnAbrir"
+                    class="boton-principal"
+                    type="button"
+                >
+                    <span>ABRIR MI REGALO</span>
+                    <span class="flecha">→</span>
+                </button>
+
+                <p class="texto-ayuda">
+                    Una pequeña sorpresa te espera
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ETAPA 2 — EL AUTOMÓVIL
+        ====================================================== -->
+
+        <section
+            id="seccionAuto"
+            class="pantalla pantalla-auto oculto"
+        >
+
+            <div class="fondo-carretera"></div>
+
+            <div class="contenido-seccion">
+
+                <div class="encabezado-seccion">
+
+                    <div class="mini-etiqueta">
+                        <span>01</span>
+                        THE RIDE
+                    </div>
+
+                    <h2>
+                        Porque algunos regalos
+                        <span>tienen cuatro ruedas.</span>
+                    </h2>
+
+                    <p>
+                        Y este pequeño compañero viene directo
+                        desde la pista para celebrar el día.
+                    </p>
+
+                </div>
+
+
+                <div class="escena-auto">
+
+                    <!-- Líneas de velocidad -->
+                    <div class="linea-velocidad linea-v1"></div>
+                    <div class="linea-velocidad linea-v2"></div>
+                    <div class="linea-velocidad linea-v3"></div>
+
+                    <div class="marcas-pista marca-uno"></div>
+                    <div class="marcas-pista marca-dos"></div>
+                    <div class="marcas-pista marca-tres"></div>
+
+                    <div class="auto-grande">
+
+                        <div class="halo-auto halo-grande"></div>
+
+                        <svg
+                            class="auto-svg"
+                            viewBox="0 0 700 350"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-label="Automóvil deportivo de juguete"
+                            role="img"
+                        >
+
+                            <ellipse
+                                cx="350"
+                                cy="294"
+                                rx="255"
+                                ry="29"
+                                fill="#020812"
+                                opacity="0.9"
+                            />
+
+                            <ellipse
+                                cx="350"
+                                cy="289"
+                                rx="225"
+                                ry="8"
+                                fill="#1ca8ff"
+                                opacity="0.3"
+                            />
+
+                            <path
+                                class="carroceria"
+                                d="
+                                M110 248
+                                C120 215 145 195 190 185
+                                L247 176
+                                L290 119
+                                C305 99 327 89 355 89
+                                L441 89
+                                C466 89 489 102 503 123
+                                L542 178
+                                L579 188
+                                C606 195 625 214 632 245
+                                L620 260
+                                L80 260
+                                Z
+                                "
+                            />
+
+                            <path
+                                d="
+                                M249 174
+                                L292 119
+                                C306 101 328 93 355 93
+                                L439 93
+                                C461 93 480 104 494 123
+                                L531 176
+                                Z
+                                "
+                                fill="#31adff"
+                                opacity="0.5"
+                            />
+
+                            <path
+                                d="
+                                M311 166
+                                L336 111
+                                L371 105
+                                L371 166
+                                Z
+                                "
+                                fill="#061526"
+                                stroke="#67d5ff"
+                                stroke-width="2"
+                            />
+
+                            <path
+                                d="
+                                M380 105
+                                L438 105
+                                C455 105 469 114 481 132
+                                L505 166
+                                L380 166
+                                Z
+                                "
+                                fill="#061526"
+                                stroke="#67d5ff"
+                                stroke-width="2"
+                            />
+
+                            <path
+                                d="M133 218 C250 207 425 208 590 218"
+                                fill="none"
+                                stroke="#6dd7ff"
+                                stroke-width="3"
+                                opacity="0.7"
+                            />
+
+                            <path
+                                d="M180 238 C275 226 460 226 554 239"
+                                fill="none"
+                                stroke="#0b5e9e"
+                                stroke-width="9"
+                            />
+
+                            <path
+                                d="M126 224 Q145 205 174 204 L190 207 L174 226 L137 233 Z"
+                                fill="#dff8ff"
+                            />
+
+                            <path
+                                d="M574 207 Q598 210 614 228 L616 237 L579 228 L566 208 Z"
+                                fill="#c9f5ff"
+                            />
+
+                            <path
+                                d="M295 250 L405 250 L391 260 L309 260 Z"
+                                fill="#02070d"
+                            />
+
+                            <path
+                                d="M211 240 Q238 229 269 235 L260 249 L217 249 Z"
+                                fill="#02070d"
+                            />
+
+                            <path
+                                d="M431 235 Q462 229 492 240 L485 249 L441 249 Z"
+                                fill="#02070d"
+                            />
+
+                            <g class="rueda">
+                                <circle cx="196" cy="259" r="47" fill="#020305"/>
+                                <circle cx="196" cy="259" r="29" fill="#252c34"/>
+                                <circle cx="196" cy="259" r="15" fill="#9faab5"/>
+                                <circle cx="196" cy="259" r="7" fill="#111820"/>
+                                <path
+                                    d="M196 237 L196 281 M174 259 L218 259"
+                                    stroke="#dce6ed"
+                                    stroke-width="3"
+                                />
+                            </g>
+
+                            <g class="rueda">
+                                <circle cx="510" cy="259" r="47" fill="#020305"/>
+                                <circle cx="510" cy="259" r="29" fill="#252c34"/>
+                                <circle cx="510" cy="259" r="15" fill="#9faab5"/>
+                                <circle cx="510" cy="259" r="7" fill="#111820"/>
+                                <path
+                                    d="M510 237 L510 281 M488 259 L532 259"
+                                    stroke="#dce6ed"
+                                    stroke-width="3"
+                                />
+                            </g>
+
+                            <text
+                                x="337"
+                                y="222"
+                                fill="#d8f6ff"
+                                font-size="12"
+                                font-family="Arial"
+                                letter-spacing="3"
+                            >
+                                30.09
+                            </text>
+
+                        </svg>
+
+                    </div>
+
+                </div>
+
+
+                <div class="tarjeta-auto">
+
+                    <div class="icono-mini">🏎️</div>
+
+                    <div>
+                        <span class="tarjeta-titulo">
+                            EDICIÓN ESPECIAL
+                        </span>
+
+                        <strong>30 DE SEPTIEMBRE</strong>
+
+                        <p>
+                            Pequeño, rápido y elegido con cariño.
+                        </p>
+                    </div>
+
+                    <div class="codigo-tarjeta">
+                        30<br>
+                        09
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="btnContinuarRosa"
+                    class="boton-secundario"
+                    type="button"
+                >
+                    CONTINUAR →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ETAPA 3 — ROSA AZUL
+        ====================================================== -->
+
+        <section
+            id="seccionRosa"
+            class="pantalla pantalla-rosa oculto"
+        >
+
+            <div id="petalosRosa" class="petalos"></div>
+
+            <div class="decoracion-flor decoracion-flor-uno">✦</div>
+            <div class="decoracion-flor decoracion-flor-dos">✧</div>
+            <div class="decoracion-flor decoracion-flor-tres">·</div>
+
+            <div class="contenido-seccion contenido-rosa">
+
+                <div class="encabezado-seccion">
+
+                    <div class="mini-etiqueta">
+                        <span>02</span>
+                        BLUE BLOOM
+                    </div>
+
+                    <h2>
+                        Y porque un carro solo
+                        <span>no estaba completo...</span>
+                    </h2>
+
+                </div>
+
+
+                <!-- ROSA SVG -->
+
+                <div
+                    class="rosa-contenedor"
+                    id="rosaContenedor"
+                >
+
+                    <div class="halo-rosa"></div>
+
+                    <svg
+                        class="rosa-svg"
+                        viewBox="0 0 420 560"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-label="Rosa azul ilustrada"
+                        role="img"
+                    >
+
+                        <!-- Tallo -->
+                        <path
+                            class="tallo"
+                            d="
+                            M210 535
+                            C205 440 218 355 207 277
+                            C201 235 211 207 224 179
+                            "
+                            fill="none"
+                            stroke="#2588b5"
+                            stroke-width="10"
+                            stroke-linecap="round"
+                        />
+
+                        <!-- Brillo del tallo -->
+                        <path
+                            d="
+                            M213 525
+                            C209 440 220 359 211 290
+                            "
+                            fill="none"
+                            stroke="#73ddff"
+                            stroke-width="3"
+                            opacity="0.7"
+                        />
+
+                        <!-- Hoja izquierda -->
+                        <path
+                            class="hoja"
+                            d="
+                            M210 395
+                            C163 361 110 365 78 401
+                            C128 424 174 420 210 395
+                            Z
+                            "
+                        />
+
+                        <!-- Hoja derecha -->
+                        <path
+                            class="hoja"
+                            d="
+                            M211 342
+                            C257 309 304 312 337 342
+                            C294 366 251 361 211 342
+                            Z
+                            "
+                        />
+
+                        <!-- Nervaduras -->
+                        <path
+                            d="M95 401 L197 397"
+                            stroke="#80e2ff"
+                            stroke-width="2"
+                            opacity="0.55"
+                        />
+
+                        <path
+                            d="M225 343 L320 338"
+                            stroke="#80e2ff"
+                            stroke-width="2"
+                            opacity="0.55"
+                        />
+
+                        <!-- Flor exterior -->
+                        <g class="flor">
+
+                            <path
+                                class="petalo petalo-1"
+                                d="
+                                M210 267
+                                C156 251 128 211 145 172
+                                C161 136 202 132 224 166
+                                C233 128 267 112 297 132
+                                C328 153 326 192 295 214
+                                C337 211 359 238 349 269
+                                C337 306 292 318 256 296
+                                Z
+                                "
+                            />
+
+                            <path
+                                class="petalo petalo-2"
+                                d="
+                                M211 268
+                                C170 243 166 199 194 174
+                                C216 154 247 163 254 191
+                                C266 159 299 155 317 178
+                                C336 203 318 232 291 242
+                                C320 254 321 286 298 302
+                                C272 319 239 299 234 276
+                                Z
+                                "
+                            />
+
+                            <!-- Centro -->
+                            <path
+                                class="centro-flor"
+                                d="
+                                M212 266
+                                C193 250 198 220 218 211
+                                C236 203 256 214 257 233
+                                C273 222 291 231 292 247
+                                C293 266 275 278 258 272
+                                C258 292 239 301 224 291
+                                C211 283 207 274 212 266
+                                Z
+                                "
+                            />
+
+                            <!-- Espiral -->
+                            <path
+                                d="
+                                M219 262
+                                C211 250 217 231 231 227
+                                C245 223 258 232 256 245
+                                C254 257 243 262 234 257
+                                C226 253 228 243 235 240
+                                "
+                                fill="none"
+                                stroke="#c6f5ff"
+                                stroke-width="4"
+                                stroke-linecap="round"
+                                opacity="0.7"
+                            />
+
+                            <!-- Brillos -->
+                            <ellipse
+                                cx="182"
+                                cy="192"
+                                rx="10"
+                                ry="20"
+                                fill="#ffffff"
+                                opacity="0.32"
+                                transform="rotate(-35 182 192)"
+                            />
+
+                            <circle
+                                cx="281"
+                                cy="177"
+                                r="6"
+                                fill="#ffffff"
+                                opacity="0.5"
+                            />
+
+                        </g>
+
+                    </svg>
+
+                </div>
+
+
+                <div class="texto-rosa">
+
+                    <p>
+                        ...también va una
+                    </p>
+
+                    <h3>
+                        rosa azul.
+                        <span>💙</span>
+                    </h3>
+
+                    <div class="separador-flor"></div>
+
+                    <p class="texto-pequeno">
+                        Porque hasta los regalos inesperados
+                        merecen un pequeño toque especial.
+                    </p>
+
+                </div>
+
+
+                <button
+                    id="btnContinuarMensaje"
+                    class="boton-secundario boton-claro"
+                    type="button"
+                >
+                    HAY ALGO MÁS →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ETAPA 4 — MENSAJE
+        ====================================================== -->
+
+        <section
+            id="seccionMensaje"
+            class="pantalla pantalla-mensaje oculto"
+        >
+
+            <div id="petalosMensaje" class="petalos"></div>
+
+            <div class="contenido-seccion contenido-mensaje">
+
+                <div class="encabezado-seccion">
+
+                    <div class="mini-etiqueta">
+                        <span>03</span>
+                        A LITTLE MESSAGE
+                    </div>
+
+                    <h2>
+                        Y ahora sí...
+                        <span>el regalo completo.</span>
+                    </h2>
+
+                </div>
+
+
+                <!-- TARJETA DEL MENSAJE -->
+
+                <div class="tarjeta-mensaje">
+
+                    <div class="esquinas esquina-uno"></div>
+                    <div class="esquinas esquina-dos"></div>
+
+                    <div class="cabecera-tarjeta">
+
+                        <div class="sello">
+                            30<br>
+                            <span>09</span>
+                        </div>
+
+                        <div>
+                            <span class="para-label">PARA</span>
+
+                            <h3 id="nombreAmigo">
+                                Kevin
+                            </h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="linea-tarjeta"></div>
+
+
+                    <div
+                        id="textoMensaje"
+                        class="texto-mensaje"
+                    ></div>
+
+
+                    <div
+                        id="cursorEscritura"
+                        class="cursor-escritura"
+                    >
+                        |
+                    </div>
+
+
+                    <div class="firma-tarjeta">
+                        <span>hecho con cariño</span>
+                        <strong>💙</strong>
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="btnDetalle"
+                    class="boton-principal boton-detalle"
+                    type="button"
+                >
+                    VER EL DETALLE COMPLETO 💙
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ETAPA 5 — FINAL
+        ====================================================== -->
+
+        <section
+            id="seccionFinal"
+            class="pantalla pantalla-final oculto"
+        >
+
+            <div id="petalosFinal" class="petalos"></div>
+
+            <div class="brillo-final"></div>
+
+            <div class="contenido-final">
+
+                <div class="mini-etiqueta">
+                    <span>04</span>
+                    ONE LAST THING
+                </div>
+
+
+                <div class="iconos-finales">
+                    <span class="icono-auto-final">🏎️</span>
+
+                    <span class="signo-final">+</span>
+
+                    <span class="flor-final">✿</span>
+                </div>
+
+
+                <h2>
+                    Los mejores regalos
+                    <span>no siempre son los más caros.</span>
+                </h2>
+
+
+                <p class="texto-final-principal">
+                    Algunos simplemente nos recuerdan
+                    a las personas que queremos tener cerca.
+                </p>
+
+
+                <div class="frase-final">
+                    <span id="fraseFinalTexto">
+                        Feliz 30 de septiembre 💙
+                    </span>
+                </div>
+
+
+                <div class="firma-final">
+                    <span>30.09</span>
+                    <div></div>
+                    <span>para recordar</span>
+                </div>
+
+
+                <button
+                    id="btnReiniciar"
+                    class="boton-secundario"
+                    type="button"
+                >
+                    ↻ VOLVER A EMPEZAR
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
